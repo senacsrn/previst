@@ -13,6 +13,10 @@ export const GlobalContent = styled.main`
     margin: 0.5rem 0;
     color: var(--main);
   }
+
+  a {
+    text-decoration: none;
+  }
 `;
 
 export const HeaderContainer = styled.header`
