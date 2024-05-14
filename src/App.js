@@ -10,30 +10,43 @@ import { Gallery } from "./Gallery";
 import { Team } from "./Team";
 
 export default function App() {
-  const [tag, setTag] = useState("gallery");
+  const [tag, setTag] = useState("galeria");
 
   useEffect(() => {
     localStorage.getItem("tag") && setTag(localStorage.getItem("tag"));
+    if (window.location.hash.includes("linhas-de-cuidado")) {
+      setTag("linhas-de-cuidado");
+    } else if (window.location.hash.includes("duvidas-frequentes")) {
+      setTag("duvidas-frequentes");
+    } else if (window.location.hash.includes("galeria")) {
+      setTag("galeria");
+    } else if (window.location.hash.includes("teatro")) {
+      setTag("teatro");
+    } else if (window.location.hash.includes("time")) {
+      setTag("time");
+    } else {
+      setTag("galeria");
+    }
   }, []);
   return (
     <BrowserRouter>
       <Header
         title={
-          tag === "help"
+          tag === "duvidas-frequentes"
             ? "Dúvidas frequentes"
-            : tag === "sos"
+            : tag === "linhas-de-cuidado"
             ? "Linhas de cuidado"
-            : tag === "smart"
+            : tag === "teatro"
             ? "Teatro"
-            : tag === "gallery"
+            : tag === "galeria"
             ? "Galeria"
-            : "Time"
+            : "time"
         }
       />
 
       <GlobalContent>
         <Routes>
-          <Route path="/" element={<Help />} />
+          <Route path="/" element={<Gallery />} />
           <Route path="/linhas-de-cuidado" element={<Lines />} />
           <Route path="/duvidas-frequentes" element={<Help />} />
           <Route path="/teatro" element={<Part />} />

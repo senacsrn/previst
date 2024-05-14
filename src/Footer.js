@@ -13,48 +13,48 @@ export function Footer({ tag, setTag }) {
       <div
         onClick={() => {
           navigate("/linhas-de-cuidado");
-          setTag("sos");
-          localStorage.setItem("tag", "sos");
+          setTag("linhas-de-cuidado");
+          localStorage.setItem("tag", "linhas-de-cuidado");
         }}
-        style={{ backgroundColor: tag === "sos" ? "#fff" : "#ef248d" }}
+        style={{ backgroundColor: tag === "linhas-de-cuidado" ? "#fff" : "#ef248d" }}
       >
         <SosOutlinedIcon
           sx={{
             fontSize: "2rem",
-            color: tag === "sos" ? "#ef248d" : "#fff",
-            background: tag === "sos" ? "#fff" : "#ef248d",
+            color: tag === "linhas-de-cuidado" ? "#ef248d" : "#fff",
+            background: tag === "linhas-de-cuidado" ? "#fff" : "#ef248d",
           }}
         />
       </div>
       <div
         onClick={() => {
           navigate("/duvidas-frequentes");
-          setTag("help");
-          localStorage.setItem("tag", "help");
+          setTag("duvidas-frequentes");
+          localStorage.setItem("tag", "duvidas-frequentes");
         }}
-        style={{ backgroundColor: tag === "help" ? "#fff" : "#ef248d" }}
+        style={{ backgroundColor: tag === "duvidas-frequentes" ? "#fff" : "#ef248d" }}
       >
         <HelpOutlinedIcon
           sx={{
             fontSize: "2rem",
-            color: tag === "help" ? "#ef248d" : "#fff",
-            background: tag === "help" ? "#fff" : "#ef248d",
+            color: tag === "duvidas-frequentes" ? "#ef248d" : "#fff",
+            background: tag === "duvidas-frequentes" ? "#fff" : "#ef248d",
           }}
         />
       </div>
       <div
         onClick={() => {
           navigate("/galeria");
-          setTag("gallery");
-          localStorage.setItem("tag", "gallery");
+          setTag("galeria");
+          localStorage.setItem("tag", "galeria");
         }}
-        style={{ backgroundColor: tag === "gallery" ? "#fff" : "#ef248d" }}
+        style={{ backgroundColor: tag === "galeria" ? "#fff" : "#ef248d" }}
       >
         <CollectionsIcon
           sx={{
             fontSize: "2rem",
-            color: tag === "gallery" ? "#ef248d" : "#fff",
-            background: tag === "gallery" ? "#fff" : "#ef248d",
+            color: tag === "galeria" ? "#ef248d" : "#fff",
+            background: tag === "galeria" ? "#fff" : "#ef248d",
           }}
         />
       </div>
@@ -62,16 +62,16 @@ export function Footer({ tag, setTag }) {
       <div
         onClick={() => {
           navigate("/teatro");
-          setTag("smart");
-          localStorage.setItem("tag", "smart");
+          setTag("teatro");
+          localStorage.setItem("tag", "teatro");
         }}
-        style={{ backgroundColor: tag === "smart" ? "#fff" : "#ef248d" }}
+        style={{ backgroundColor: tag === "teatro" ? "#fff" : "#ef248d" }}
       >
         <SmartDisplayOutlinedIcon
           sx={{
             fontSize: "2rem",
-            color: tag === "smart" ? "#ef248d" : "#fff",
-            background: tag === "smart" ? "#fff" : "#ef248d",
+            color: tag === "teatro" ? "#ef248d" : "#fff",
+            background: tag === "teatro" ? "#fff" : "#ef248d",
           }}
         />
       </div>
@@ -79,16 +79,16 @@ export function Footer({ tag, setTag }) {
       <div
         onClick={() => {
           navigate("/time");
-          setTag("team");
-          localStorage.setItem("tag", "team");
+          setTag("time");
+          localStorage.setItem("tag", "time");
         }}
-        style={{ backgroundColor: tag === "team" ? "#fff" : "#ef248d" }}
+        style={{ backgroundColor: tag === "time" ? "#fff" : "#ef248d" }}
       >
         <Diversity2Icon
           sx={{
             fontSize: "2rem",
-            color: tag === "team" ? "#ef248d" : "#fff",
-            background: tag === "team" ? "#fff" : "#ef248d",
+            color: tag === "time" ? "#ef248d" : "#fff",
+            background: tag === "time" ? "#fff" : "#ef248d",
           }}
         />
       </div>
