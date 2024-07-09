@@ -7,8 +7,8 @@ export function Part() {
 
       <iframe
         width="100%"
-        height="200px"
-        src="https://www.youtube.com/embed/YnF97SDx8w0?si=478AFZXnqxox4yaw"
+        height="315"
+        src="https://www.youtube.com/embed/z-THLnErZ44?si=-JbFVJ5hON5Abj5M"
         title="YouTube video player"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
